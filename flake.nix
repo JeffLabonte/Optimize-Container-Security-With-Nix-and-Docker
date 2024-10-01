@@ -2,7 +2,9 @@
   description = "An Example of builder containers and Go modules in Nix";
 
   # Nixpkgs / NixOS version to use.
-  inputs.nixpkgs.url = "nixpkgs/nixos-unstable";
+  inputs = {
+    nixpkgs.url = "nixpkgs/nixos-unstable";
+  };
 
   outputs =
     { self, nixpkgs }:
@@ -38,37 +40,26 @@
           pkgs = nixpkgsFor.${system};
         in
         {
-          go-hello = pkgs.buildGo123Module {
-            pname = "go-hello";
+          awesome-api = pkgs.buildGo123Module {
+            pname = "awesome-api";
             inherit version;
             # In 'nix develop', we don't need a copy of the source tree
             # in the Nix store.
             src = "${./src}";
 
-            # This hash locks the dependencies of this package. It is
-            # necessary because of how Go requires network access to resolve
-            # VCS.  See https://www.tweag.io/blog/2021-03-04-gomod2nix/ for
-            # details. Normally one can build with a fake hash and rely on native Go
-            # mechanisms to tell you what the hash should be or determine what
-            # it should be "out-of-band" with other tooling (eg. gomod2nix).
-            # To begin with it is recommended to set this, but one must
-            # remember to bump this hash when your dependencies change.
-            # vendorHash = pkgs.lib.fakeHash;
-
             vendorHash = "sha256-G6YSns1g4nOUSKgQtF1Y3AV2+LBgak+IG1GxMrCDpr4=";
           };
           container = pkgs.dockerTools.buildImage {
-            name = "go-hello";
+            name = "awesome-api-container";
             tag = "latest";
             copyToRoot = [
-              self.packages.${system}.go-hello
-              pkgs.cacert
+              self.packages.${system}.awesome-api
             ];
             config = {
               ExposedPorts = {
                 "8080/tcp" = { };
               };
-              Entrypoint = [ "${self.packages.${system}.go-hello}/bin/go-hello" ];
+              Entrypoint = [ "${self.packages.${system}.awesome-api}/bin/awesome-api" ];
               Cmd = [ ];
             };
             diskSize = 1024;
