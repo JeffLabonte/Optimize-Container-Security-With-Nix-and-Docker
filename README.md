@@ -180,3 +180,15 @@ This repository is the example used for the Talk on October 11th 2024 @ 8pm for 
   }
   ```
 </details>
+
+<details>
+  <summary>Building the container</summary>
+
+  ```bash
+  nix build .#container
+  ```
+
+  This will build the container for your system if it is supported by Nix.
+
+
+</details>
