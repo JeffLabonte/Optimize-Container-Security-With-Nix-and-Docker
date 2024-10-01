@@ -7,5 +7,18 @@ This repository is the example used for the Talk on October 11th 2024 @ 8pm for 
 <details>
 <summary>Initialise the project</summary>
 <br />
-Add a gif of the initialisation of the project
+  There are multiple templates out there, but I will be using the empty template
+  
+  ![image](https://github.com/user-attachments/assets/95db55a4-06d1-4767-8ca4-4932bac7b1f7)
+
+  ```bash
+  cat flake.nix
+  ```
+  ![image](https://github.com/user-attachments/assets/08ddc7a4-a409-47d8-a8df-96a4ded483b0)
+
+  Now, it generates nothing and take no input! Let's change that!
+</details>
+
+<details>
+  
 </details>
