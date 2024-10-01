@@ -20,5 +20,19 @@ This repository is the example used for the Talk on October 11th 2024 @ 8pm for 
 </details>
 
 <details>
-  
+<summary>The Inputs</summary>
+  Flake works with `inputs` and `outputs`, so let's add the first input.
+
+  In this example, I am using nixos-unstable. I want the latest version of software for this project.
+
+  ![image](https://github.com/user-attachments/assets/f465fb12-4ad0-41b8-9af5-ac78c37d1f4e)
+
+</details>
+
+<details>
+  <summary>Take Advantage of Nix</summary>
+  This code block is there to help deal with multiple CPU Architecture and Operating System.
+
+  ![image](https://github.com/user-attachments/assets/da91f522-8939-4510-839d-d54c6e1cb311)
+
 </details>
