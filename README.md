@@ -189,6 +189,13 @@ This repository is the example used for the Talk on October 11th 2024 @ 8pm for 
   ```
 
   This will build the container for your system if it is supported by Nix.
+  
+  ![nix_build_and_load](https://github.com/user-attachments/assets/47288aa8-2e47-4ae7-8c0f-b2390cc26a44)
 
+  As you can see the image is much smaller
+
+  Now! Let's see with Docker:
+
+  ![building_docker](https://github.com/user-attachments/assets/819630fa-ba2c-4ed1-9be6-e85d45b7f16c)
 
 </details>
