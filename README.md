@@ -198,4 +198,9 @@ This repository is the example used for the Talk on October 11th 2024 @ 8pm for 
 
   ![building_docker](https://github.com/user-attachments/assets/819630fa-ba2c-4ed1-9be6-e85d45b7f16c)
 
+  The difference is incredible!
+  
+  ![image](https://github.com/user-attachments/assets/30911e58-54d0-4aed-af46-992c4aae3d85)
+
+
 </details>
