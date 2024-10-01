@@ -1,4 +1,4 @@
-module example.com/go-hello
+module example.com/awesome-api
 
 go 1.16
 
