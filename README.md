@@ -204,3 +204,17 @@ This repository is the example used for the Talk on October 11th 2024 @ 8pm for 
 
 
 </details>
+
+<details>
+  <summary>Let's run some command on these containers</summary>
+
+  Let's run our Nix built container and try to run a few command. 
+  
+  ![image](https://github.com/user-attachments/assets/d8a878eb-d4ba-4ca5-bf99-7b541b21090a)
+
+  What about Docker?
+  ![image](https://github.com/user-attachments/assets/b8ed2944-4c61-497d-918b-13eeec364de7)
+  ![image](https://github.com/user-attachments/assets/cc466553-1b8d-4e97-a44e-4da718ec9ae7)
+
+
+</details>
